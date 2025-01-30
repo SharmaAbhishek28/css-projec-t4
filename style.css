@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy';
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: #f8f8f8;
+    position: relative;
+    padding-top: 0.1px;
+}
+
+/* navigation baaaar */
+
+#nav{
+    width: 100%;
+    height: 11vh;
+    border-top: 1.5px solid #1e1e1e;
+    border-bottom: 1.5px solid #1e1e1e;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 32px; /* ye dene se issue aa jata hai jisse main and nav dono ka page niche ek sath aa jata hai toh use avoid krne ke liye main ko padding dedo ekdm km bahut thoda sa bhi jisse vo sahi ho jayega */
+}
+
+
+@font-face {
+    font-family: "Monument Extended";
+    src: url("/MonumentExtended-Ultrabold.otf") format("opentype");
+    font-weight: bold;
+}
+
+
+#nav h1{
+    height: 100%;
+    width: 20%;
+    /* background-color: bisque; */
+    font-size: 28px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1e1e1e;
+    font-family: 'Monument Extended';
+    letter-spacing: -1px;
+}
+
+#nav h2{
+    height: 100%;
+    width: 20%;
+    /* background-color: bisque; */
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1.5px solid #1e1e1e;
+    color: #1e1e1e;
+}
+
+#nav h2:nth-last-child(1){
+    width: 12%;
+    /* background-color: aquamarine;
+     */
+}
+
+#nav h2:nth-last-child(2){
+    width: 30%;
+    /* background-color: aquamarine; */
+}
+
+#nav h2:nth-last-child(4){
+    border: none;
+}
+
+
+/* Hero Section */
+
+#hero{
+    width: 100%;
+    height: 80vh;
+    /* background-color: rebeccapurple; */
+    padding: 2vw 4vw;
+    position: relative;
+}
+
+#content{
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+    position: relative;
+}
+
+#content video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#overlay{
+    width: 100%;
+    height: 52%;
+    position: absolute;
+    bottom: 0;
+    /* background-color: red; */
+    padding: 2vw 4vw;
+    
+
+}
+
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-bottom: 2vw; */
+    /* background-color: aquamarine; */
+}
+
+#over1 h1{
+    font-family: 'monument extended';
+    color: #ffffff;
+    font-size: 3vw;
+}
+
+#over1 h2{
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 2vw;
+    padding: 2vw 2.2vw;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+}
+
+#over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #ffffff;
+    margin-top: 1.4vw;
+    padding: 1.6vw 0vw;
+    /* background-color: blue; */
+}
+
+#over2 h4{
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.4vw;
+}
+
+#over2 img{
+    height: 2.6vw;
+}
