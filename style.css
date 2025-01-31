@@ -53,6 +53,7 @@ html, body{
     color: #1e1e1e;
     font-family: 'Monument Extended';
     letter-spacing: -1px;
+    position: relative;
 }
 
 #nav h2{
@@ -81,6 +82,28 @@ html, body{
 
 #nav h2:nth-last-child(4){
     border: none;
+}
+
+#nav h1::after{
+    content: "©️";
+    font-weight: 400;
+    font-size: 1vw;
+    position: absolute;
+    top: 16%;
+    right: 14%;
+    color: #1e1e1e;
+}
+
+#nav h1::before{
+    content: "model management";
+    font-family: 'gilroy';
+    font-weight: 400;
+    font-size: .8vw;
+    position: absolute;
+    bottom: 16%;
+    right: 20%;
+    letter-spacing: .1px;
+    color: #1e1e1e;
 }
 
 
@@ -295,7 +318,7 @@ html, body{
 #right{
     height: 100%;
     width: 48%;
-    background-color: #fff;
+    /* background-color: #fff; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -342,9 +365,528 @@ html, body{
     padding: 2vw 4vw;
     /* background-color: #1e1e1e; */
 }
+
 #p3 h1{
-    
     font-family: 'Monument Extended';
     font-size: 4vw;
+}
 
+/* p4 */
+
+#p4{
+    width: 100%;
+    height: 100vh;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw 4vw;
+    position: relative;
+    gap: 3vw;
+}
+
+#p4-left{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: antiquewhite; */
+}
+#left-up{
+    
+    align-self: center;
+    justify-self: center;
+    width: 80%;
+    height: 60%;
+     
+    /* background-color: #f8f8f8; */
+}
+#bg1{
+    width: 100%;
+    height: 100%;
+    scale: .7;
+    /* background-color: aqua; */
+}
+#bg2{
+    width: 4vw;
+    height: 3vw;
+    position: absolute;
+    left: 20%;
+    top: 30%;
+} 
+
+#left-down h3{
+    font-size: 1.4vw;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1.6vw;
+    padding: 0vw 1.5vw;
+}
+#p4-right{
+    width: 60%;
+    height: 100%;
+    
+}
+
+#p4-right img{
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* p5 */
+
+#p5{
+    width: 100%;
+    height: 100vh;
+    padding: 2vw 4vw;
+    
+    
+    
+}
+
+#p5 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Update */
+
+#update{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    padding: 2vw 4vw;
+    position: relative;
+}
+
+#update h1{
+    font-size: 3vw;
+    font-family: 'Monument Extended';
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 5vh;
+}
+
+.elem{
+    width: 100%;
+    height: 16vh;
+    /* background-color: rebeccapurple; */
+    border-top: 2px solid #1e1e1e;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 2vw;
+}
+
+.elem img{
+    width: 8vw;
+    height: 7vw;
+    background-color: #1e1e1e;
+    position: absolute;
+    left: 16%;
+    opacity: 0;
+    transition: all ease .9s;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.elem:hover img{
+    left: 28%;
+    opacity: 100%;
+}
+
+.elem:nth-last-child(1) img {
+    left: 44%;
+    opacity: 0;
+    object-position: 0 40%;
+}
+.elem:nth-last-child(1):hover img {
+    left: 28%;
+    opacity: 100%;
+}
+
+.elem:nth-last-child(3) img {
+    left: 44%;
+    opacity: 0;
+}
+.elem:nth-last-child(3):hover img {
+    left: 28%;
+    opacity: 100%;
+}
+
+.elem:nth-last-child(4) img{
+    object-position: top;
+}
+
+.elem:nth-last-child(2) img{
+    object-position: -16% 10%;
+}
+
+
+.elem h3{
+    width: 6%;
+    font-size: 1.4vw;
+    font-weight: 500;
+}
+
+.elem2{
+    width: 45%;
+}
+.elem2 h2{
+    font-size: 2.4vw;
+    font-weight: 500;
+    
+}
+.elem2 h5{
+    font-size: 1vw;
+    font-weight: 600;
+    
+}
+
+.elem:nth-last-child(1){
+    border-bottom: 2px solid #1e1e1e;
+}
+
+/* p6 */
+
+#p6{
+    width: 100%;
+    height: 100%;
+    padding: 2vw 4vw;
+    /* background-color: aqua; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#p6-left{
+    width: 48%;
+    height: 80vh;
+    /* background-color: #1e1e1e; */
+}
+
+#p6-right{
+    width: 46%;
+    height: 80vh;
+    /* background-color: #551e1e; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#p6-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+#pr-up{
+    width: 100%;
+    height: 45%;
+    /* background-color: #f8f8f8; */
+}
+
+#pr-up h2{
+    font-family: 'Monument Extended';
+    font-size: 3vw;
+    margin-bottom: 2vw;
+}
+
+#pr-up h3{
+    font-size: 1.6vw;
+    font-weight: 600;
+    width: 60%;
+    margin-bottom: 2vw;
+}
+
+#pr-up p{
+    font-size: 1.1vw;
+    font-weight: 500;
+    width: 100%;
+    letter-spacing: -.6px;
+}
+
+#pr-down{
+    width: 100%;
+    height: 50%;
+    /* background-color: #fff; */
+    display: flex;
+    justify-content: space-between;
+}
+#pr-down img{
+    object-fit: cover;
+}
+#prd1{
+    width: 60%;
+    height: 100%;
+
+}
+
+#prd2{
+    width: 35%;
+    height: 100%;
+    
+}
+
+/* p7 */
+
+#p7{
+    width: 100%;
+    height: 100vh;
+    /* background-color: #f10101; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 4vw;
+    /* gap: 2vw; */
+}
+
+ #p7-left{
+    height: 100%;
+    width: 50%;   
+    background-color: #fff;
+}
+
+#p7-left img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#p7-right{
+    height: 100%;
+    width: 48%;
+    /* background-color: #fff; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#p7-right img{
+    height: 75%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 10%;
+}
+
+#p7rb{
+    width: 100%;
+    height: 20%;
+    margin-top: 1.2vw;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 2vw;
+    /* background-color: aqua; */
+}
+
+#p7rb h3{
+    width: 70%;
+    font-size: 1.5vw;
+    line-height: 1.8vw;
+    font-weight: 500;
+    letter-spacing: 2px;
+    /* background-color: bisque; */
+}
+
+#p7rb h5{
+    width: 100%;
+    font-size: 1vw;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 1.2vw;
+    /* background-color: bisque; */
+}
+
+
+/* MARQUE */
+
+#marque{
+    width: 100%;
+    padding: 1vw;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-top: 1.4px solid #1e1e1e;
+    border-bottom: 1.4px solid #1e1e1e;
+}
+
+#marque h1{
+    display: inline-block;
+    font-size: 3vw;
+    font-family: 'monument extended';
+    letter-spacing: 2px;
+    margin-right: 16px;
+    -webkit-text-stroke: 1.4px #1e1e1e;
+    color: transparent;
+    padding: 1vw 0vw;
+    /* background-color: antiquewhite; */
+    animation-name: txt-move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes txt-move {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
+/* blog */
+#blog{
+    width: 100%;
+    height: 100%;
+    padding:  4vw;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    
+}
+
+#blog-left{
+    width: 16%;
+    /* background-color: antiquewhite; */
+
+}
+
+#blog-left h1{
+    font-size: 3vw;
+    font-family: 'Monument Extended';
+    letter-spacing: 2px;
+}
+
+#blog-right{
+    width: 75%;
+    height: 60vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blr{
+    width: 48%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blr h4{
+    width: 100%;
+    height: 40%;
+    font-size: 1.4vw;
+    font-weight: 500;
+    line-height: 1.8vw;
+
+}
+
+.blr img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+
+#br2 img{
+    object-position: 10% 30%;
+}
+
+/* footer */
+
+#footer{
+    width: 100%;
+    height: 20vh;
+    border-top: 1.5px solid #1e1e1e;
+    border-bottom: 1.5px solid #1e1e1e;
+    /* background-color: red; */
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+#footer h1{
+    height: 100%;
+    width: 20%;
+    /* background-color: bisque; */
+    font-size: 28px;
+    font-weight: 600;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    color: #1e1e1e;
+    font-family: 'Monument Extended';
+    letter-spacing: -1px;
+    position: relative;
+    padding-top: 2vw;
+}
+
+#footer h2{
+    height: 100%;
+    width: 20%;
+    /* background-color: bisque; */
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    border-left: 1.5px solid #1e1e1e;
+    color: #1e1e1e;
+    padding-top: 2vw;
+}
+
+#footer h2:nth-last-child(1){
+    width: 42%;
+    /* background-color: aquamarine;
+     */
+}
+
+
+
+#footer h2:nth-last-child(){
+    border: none;
+}
+
+#footer h1::after{
+    content: "©️";
+    font-weight: 400;
+    font-size: 1vw;
+    position: absolute;
+    top: 16%;
+    right: 14%;
+    color: #1e1e1e;
+}
+
+#footer h1::before{
+    content: "model management";
+    font-family: 'gilroy';
+    font-weight: 400;
+    font-size: .8vw;
+    position: absolute;
+    top: 40%;
+    right: 20%;
+    letter-spacing: .1px;
+    color: #1e1e1e;
+}
+
+
+/* last */
+#last{
+    width: 100%;
+    height: 100%;
+    padding: 2vw;
 }
