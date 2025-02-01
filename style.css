@@ -1416,6 +1416,7 @@ html, body{
     font-size: 3vw;
     flex-wrap: wrap;
     padding-right: 4vw;
+
    
 }
 
@@ -1458,4 +1459,20 @@ html, body{
     color: #1e1e1e;
 }
 
+}
+
+
+/* Hide scrollbar for Chrome, Safari, and Edge */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for Firefox */
+html {
+    scrollbar-width: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+body {
+    -ms-overflow-style: none;
 }
